@@ -1,0 +1,218 @@
+
+:root{
+    --primary:#09c488;
+    --Secondry:gray;
+    --darkBG:#333;
+    --lightBG:#ffffff;
+    --secBG:#fcfcfc;
+    --thiBG:#ecf8f4;
+}
+
+/*==========responsive | width: 1300 px==========*/
+
+@media (max-width:1300px) {
+
+    .carousel-control-prev {
+        left: 0;
+    }
+    .carousel-control-next {
+        right: 0;
+    }
+}
+
+/*==========responsive | width: 991 px==========*/
+
+@media (max-width:991px) {
+    header {
+        background-color: var(--secBG);
+    }
+    .slider {
+        padding-top: 85px;
+    }
+    .carousel-control-prev {
+        left: 0;
+    }
+    .carousel-control-next {
+        right: 0;
+    }
+    .control-icon {
+        width: auto;
+        height: auto;
+        line-height: normal;
+        border:none;
+    }
+    .control-icon:hover{
+        background-color: var(--lightBG);
+        color: var(--primary);
+    }
+}
+
+/*==========Mobile header responsive | width: 768 px==========*/
+
+@media (max-width:768px) {
+    
+    .menu-bars {
+        width: 90px;
+    }
+    .menu-bars,.menu-chk{
+        display: block !important;
+    }
+    .menu-chk:checked{
+        position: fixed;
+        top: 20px;
+        left: 315px;
+        transition: .7s;
+    }
+    .menu-chk:checked ~ .menu-bars{
+        opacity: 0 !important;
+    }
+    .menu-chk:checked ~ .menu-cross{
+        display: block;
+        position: fixed;
+        top: 12px;
+        left: 315px;
+        transition: .7s;
+    }
+    .header-top {
+        display: none;
+    }
+    header {
+        padding: 15px 0px;
+        box-shadow: none;
+    }
+    .header-mid .menu {
+        width: 350px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -350px;
+        padding: 30px;
+        box-sizing: border-box;
+        background-color: var(--lightBG);
+        z-index: 6;
+    }
+    .header-mid .menu ul {
+        display: block;
+        margin-top: 100px;
+        text-align: center;
+    }
+    .header-mid .menu ul li {
+        margin-bottom: 30px;
+    }
+
+    .menu-chk:checked ~ .menu {
+        left: 0px;
+        box-shadow: 0px 0px 10px -5px #09c488;
+        transition: .4s;
+    
+    }
+}
+
+/*==========responsive | width: 768 px==========*/
+
+@media (max-width:768px) {
+
+    .section-padding {
+        padding: 70px 0px;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .slider p {
+        font-size: 18px !important;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h6 {
+        font-size: 18px;
+    }
+    .admin, .date, p, li, a {
+        font-size: 16px !important;
+        line-height: 30px;
+    }
+    .call h2{
+        text-align: center;
+    }
+    .footer-bottom-text {
+        padding: 20px 0px;
+    }
+}
+
+/*==========responsive | width: 575 px==========*/
+
+@media (max-width:575px) {
+
+    h1 {
+        font-size: 35px;
+    }
+    h5 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .admin, .date, p, li, a {
+        font-size: 15px !important;
+        line-height: 26px;
+    }
+    .button {
+        padding: 13px 15px;
+    }
+    .call .btn-two {
+        padding: 11px 15px;
+    }
+    .title-top {
+        font-size: 15px;
+    }
+    .title {
+        font-size: 25px;
+    }
+    .section-padding {
+        padding: 50px 0px;
+    }
+    .slider {
+        padding-top: 40px;
+    }
+    .tips-box {
+        margin-bottom: 30px;
+    }
+    .q-a .button {
+        margin: 30px 0px;
+    }
+    .provide-list {
+        margin-top: 25px;
+    }
+    .team-box {
+        margin-bottom: 30px;
+    }
+    .news-box {
+        margin-bottom: 30px;
+    }
+    .call {
+        padding: 30px;
+    }
+    .call-btn {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .header-mid .menu {
+        width: 300px;
+    }
+    .menu-chk:checked {
+        position: fixed;
+        left: 265px;
+    }
+    .menu-chk:checked ~ .menu-cross {
+        position: fixed;
+        left: 265px;
+    }
+    .appointment{
+        width: 300px;
+    
+    }
+}
